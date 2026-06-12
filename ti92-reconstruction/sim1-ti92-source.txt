@@ -1,0 +1,189 @@
+sim1()
+:Prgm
+
+:Local TIME,TT
+:Local ON,GN,BN,RN
+:Local OM,GM,BM,RMM
+:Local BD,OD,GD,RD
+:Local BP,OP,GP,RP
+:Local u,uT,O,OT,G,GT,RR,RT
+:Local RV,RM,D
+
+:ClrIO
+
+:Input "ENTER NUMBER OF CYCLES: ",TIME
+
+:TIME➔TT
+
+:0➔ON
+:0➔GN
+:10➔BN
+:0➔RN
+
+:0➔OM
+:0➔GM
+:0➔BM
+:0➔RMM
+
+:0➔BD
+:0➔OD
+:0➔GD
+:0➔RD
+
+:10➔BP
+:0➔OP
+:0➔GP
+:0➔RP
+
+:10➔u
+:u➔uT
+
+:0➔O
+:O➔OT
+
+:0➔G
+:G➔GT
+
+:0➔RR
+:RR➔RT
+
+:While TT>0
+
+:  © --- ORANGE SPECIES LOOP ---
+:  While OT>0
+:    If O>0 and OT>0 Then
+:      rand(10)➔RV
+:      If RV=1 Then
+:        rand(20)➔RM
+:        If RM<=3 Then
+:          RMM+1➔RMM
+:          RR+1➔RR
+:          RP+1➔RP
+:        ElseIf RM>3 Then
+:          ON+1➔ON
+:          O+1➔O
+:          OP+1➔OP
+:        EndIf
+:      EndIf
+:      rand(20)➔D
+:      If D=1 Then
+:        O-1➔O
+:        OD+1➔OD
+:      EndIf
+:      OT-1➔OT
+:    EndIf
+:  EndWhile
+
+:  © --- GREEN SPECIES LOOP ---
+:  While GT>0
+:    If G>0 and GT>0 Then
+:      rand(7)➔RV
+:      If RV=1 Then
+:        rand(8)➔RM
+:        If RM>2 Then
+:          G+1➔G
+:          GN+1➔GN
+:          GP+1➔GP
+:        ElseIf RM=2 Then
+:          BM+1➔BM
+:          u+1➔u
+:          BP+1➔BP
+:        ElseIf RM=1 Then
+:          OM+1➔OM
+:          O+1➔O
+:          OP+1➔OP
+:        EndIf
+:      EndIf
+:      rand(10)➔D
+:      If D=1 Then
+:        G-1➔G
+:        GD+1➔GD
+:      EndIf
+:      GT-1➔GT
+:    EndIf
+:  EndWhile
+
+:  © --- RED SPECIES LOOP ---
+:  While RT>0
+:    If RR>0 and RT>0 Then
+:      rand(3)➔RV
+:      If RV=1 Then
+:        rand(6)➔RM
+:        If RM>2 Then
+:          RR+1➔RR
+:          RN+1➔RN
+:          RP+1➔RP
+:        ElseIf RM=2 Then
+:          G+1➔G
+:          GM+1➔GM
+:          GP+1➔GP
+:        ElseIf RM=1 Then
+:          OM+1➔OM
+:          O+1➔O
+:          OP+1➔OP
+:        EndIf
+:      EndIf
+:      rand(10)➔D
+:      If D=1 Then
+:        RR-1➔RR
+:        RD+1➔RD
+:      EndIf
+:      RT-1➔RT
+:    EndIf
+:  EndWhile
+
+© --- BLUE SPECIES LOOP (USING U AND UT) ---
+:  While ut>0
+:    If u>0 Then
+:      rand(10)➔r
+:      If r=1 Then
+:        rand(10)➔rm
+:        If rm>2 Then
+:          bn+1➔bn
+:          u+1➔u
+:          bp+1➔bp
+:        ElseIf rm=2 Then
+:          om+1➔om
+:          o+1➔o
+:          op+1➔op
+:        ElseIf rm=1 Then
+:          g+1➔g
+:          gm+1➔gm
+:          gp+1➔gp
+:        EndIf
+:      EndIf
+:      rand(3)➔d
+:      If d=1 Then
+:        u-1➔u
+:        bd+1➔bd
+:      EndIf
+:    EndIf
+:    ut-1➔ut
+:  EndWhile
+
+:  © Reset tokens for the next main cycle loop
+:  u➔uT
+:  O➔OT
+:  G➔GT
+:  RR➔RT
+
+:  TT-1➔TT
+:If mod(tt,2)=0 Then
+:Output 0,150,"|"
+:Else
+:Output 0,150,"-"
+:EndIf
+:EndWhile
+
+:ClrIO
+
+:ClrIO
+:Disp "AFTER "&string(TIME)&" CYCLES"
+:Disp "STAT        BLUE       RED"
+:Disp "------------------------------"
+:Disp "N.BIRTH:    "&string(BN)&"         "&string(RN)&"     "&string(GN)&"         "&string(ON)
+:Disp "M.BIRTH:    "&string(BM)&"         "&string(RMM)&"     "&string(GM)&"         "&string(OM)
+:Disp "DEATHS:     "&string(BD)&"         "&string(RD)&"       "&string(GD)&"         "&string(OD)
+:Disp "ALIVE:      "&string(B)&"         "&string(RR)&"        "&string(G)&"         "&string(O)
+:Disp "TOTAL:      "&string(BP)&"         "&string(RP)&"       "&string(GP)&"         "&string(OP)
+:EndPrgm
