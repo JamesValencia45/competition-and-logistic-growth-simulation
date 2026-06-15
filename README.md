@@ -1,6 +1,6 @@
 # Competition and Logistic Growth Simulation
 
-![Project Evolution](images/project-evolution.JPG)
+![Project Evolution](images/project-evolution.PNG)
 
 *Original TI-92 Plus simulation developed in 2022 and later adapted into JavaScript.*
 
