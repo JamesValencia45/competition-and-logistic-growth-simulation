@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: gainsboro; text-align: center; font-size: large; color: black;">
+    <label id="myLabel">Number of cycles</label><br><br>
+    <input type="text" id="time" value="0" style="background-color: whitesmoke;"><br><br>
+    <table border="5" style="width: 100%; ">
+        <tr>
+            <td>Creaturs</td>
+            <td>Red Creaturs</td>
+            <td>Blue Creatures</td>
+            <td>Green Creatures</td>
+            <td>Orange Creatures</td>
+        </tr>
+        <tr>
+            <td>starting amount</td>
+            <td> <input type="text" id="redC" value="0" style="background-color: whitesmoke;"></td>
+            <td> <input type="text" id="blueC" value="0" style="background-color: whitesmoke;"></td>
+            <td> <input type="text" id="greenC" value="0" style="background-color: whitesmoke;"></td>
+            <td> <input type="text" id="orangeC" value="0" style="background-color: whitesmoke;"></td>
+        </tr>
+        <tr>
+            <td>survival against Red</td>
+            <td> <input type="text" id="redR" value="0" style="background-color: rgb(255, 159, 159);">% chance></td>
+            <td> <input type="text" id="blueR" value="0" style="background-color: rgb(255, 225, 159);">% chance</td>
+            <td> <input type="text" id="greenR" value="0" style="background-color: rgb(218, 255, 159);">% chance</td>
+            <td> <input type="text" id="orangeR" value="0" style="background-color: rgb(159, 255, 201);">% chance</td>
+        </tr>
+        <tr>
+            <td>survival against Blue</td>
+            <td> <input type="text" id="redB" value="0" style="background-color: rgb(255, 225, 159);">% chance</td>
+            <td> <input type="text" id="blueB" value="0" style="background-color: rgb(195, 232, 255);">% chance</td>
+            <td> <input type="text" id="greenB" value="0" style="background-color: rgb(255, 177, 124);">% chance</td>
+            <td> <input type="text" id="orangeB" value="0" style="background-color: rgb(189, 255, 124);">% chance</td>
+        </tr>
+        <tr>
+            <td>survival against Green</td>
+            <td> <input type="text" id="redG" value="0" style="background-color: rgb(218, 255, 159);">% chance</td>
+            <td> <input type="text" id="blueG" value="0" style="background-color: rgb(255, 177, 124);">% chance</td>
+            <td> <input type="text" id="greenG" value="0" style="background-color: rgb(199, 200, 255);">% chance</td>
+            <td> <input type="text" id="orangeG" value="0" style="background-color: rgb(255, 157, 189);">% chance</td>
+        </tr>
+        <tr>
+            <td>survival against Orange</td>
+            <td> <input type="text" id="redO" value="0" style="background-color: rgb(159, 255, 201);">% chance</td>
+            <td> <input type="text" id="blueO" value="0" style="background-color: rgb(189, 255, 124);">% chance</td>
+            <td> <input type="text" id="greenO" value="0" style="background-color: rgb(255, 157, 189);">% chance</td>
+            <td> <input type="text" id="orangeO" value="0" style="background-color: rgb(231, 194, 255);">% chance</td>
+        </tr>
+        <tr>
+            <td>survival by them self</td>
+            <td> <input type="text" id="redW" value="0" style="background-color: whitesmoke;">% chance</td>
+            <td> <input type="text" id="blueW" value="0" style="background-color: whitesmoke;">% chance</td>
+            <td> <input type="text" id="greenW" value="0" style="background-color: whitesmoke;">% chance</td>
+            <td> <input type="text" id="orangeW" value="0" style="background-color: whitesmoke;">% chance</td>
+        </tr>
+    </table><br><br>
+    <button type="button" id="myButton" style="background-color: whitesmoke;">submit</button><br>
+    <p style="font-size: x-large;">results</p>
+    <p id="timeCycle"></p>
+    <p id="test"></p>
+
+    <script src="simulation2.js"></script>
+</body>
+
+</html>
