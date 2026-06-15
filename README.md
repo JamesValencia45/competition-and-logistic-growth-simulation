@@ -60,11 +60,11 @@ The simulation was later rewritten in JavaScript and HTML while preserving the o
 
 #### Before Execution
 
-![Web Interface](simulation-web/web-interface.png)
+![Web Interface](simulation-web/sim1/web-interface.png)
 
 #### After Execution
 
-![Web Results](simulation-web/web-results-30-cycles.png)
+![Web Results](simulation-web/sim1/web-results-30-cycles.png)
 
 <br>
 <br>
