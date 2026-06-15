@@ -10,15 +10,15 @@
 
 This repository preserves the complete historical record of one of my earliest programming projects.
 
-The simulation models four species interacting through probabilistic reproduction, mutation, and death events. Although simple by modern standards, it represents my first attempt to model a complex system through code and serves as the starting point of a progression that later led to embedded systems, wireless telemetry, and amateur radio engineering projects.
+This simulation models four species interacting through probabilistic reproduction, mutation, and death events. Although simple by modern standards, it represents my first attempt to model a complex system through code and serves as the starting point of a progression that later led to embedded systems, wireless telemetry, and amateur radio engineering projects.
 
 <br>
 
 ## Historical Context
 
-In 2022, after becoming interested in evolutionary simulations and population modeling, I began experimenting with ways to represent these ideas on a TI-92 Plus graphing calculator.
+In 2021, while I was beginning to see the wonders of mathematics, my dad introduced me to an easy form of automation using Microsoft Excel. Although it only involved a short aritmetic expression, that short sequence completely entralled me with a computational exigence, which immediately drew me toward the TI-92's programming capabilities. So, from punching short, interative automations into my calculator to abstracting program logic on paper, I soon became interested in the probabilities behind evolutionary simulations and population modeling. I therefore began experimenting with ways to represent these ideas on my TI-92 Plus graphing calculator.
 
-The original project was inspired by simulation videos exploring mutation, competition, and population dynamics. Working within the limitations of a graphing calculator forced me to think carefully about variables, probability, state tracking, and system behavior.
+The original project was inspired by simulation videos exploring mutation, competition, and population dynamics. Working within the limitations of a graphing calculator forced me to think carefully about variables, probability, and overall system behavior.
 
 Several years later, surviving notebook notes, JavaScript adaptations, and calculator code were used to reconstruct and document the original project.
 
@@ -29,7 +29,7 @@ Several years later, surviving notebook notes, JavaScript adaptations, and calcu
 
 ## Project Evolution
 
-### Phase 1 — Notebook Design
+### Phase 1 - Notebook Design
 
 Simulation probabilities, mutation pathways, and species interactions were first designed on paper.
 
@@ -37,7 +37,7 @@ Simulation probabilities, mutation pathways, and species interactions were first
 
 <br>
 
-### Phase 2 — TI-92 Plus Implementation
+### Phase 2 - TI-92 Plus Implementation
 
 The simulation was implemented on a TI-92 Plus graphing calculator.
 
@@ -54,7 +54,7 @@ Features included:
 
 <br>
 
-### Phase 3 — JavaScript Adaptation
+### Phase 3 - JavaScript Adaptation
 
 The simulation was later rewritten in JavaScript and HTML while preserving the original logic.
 
@@ -67,17 +67,33 @@ The simulation was later rewritten in JavaScript and HTML while preserving the o
 ![Web Results](simulation-web/sim1/web-results-30-cycles.png)
 
 <br>
+
+### Phase 4 - Expanded Evolutionary Simulation
+
+This second-generation simulation represents the final stage of the project's evolution and serves as the concluding chapter of my early exploration into probability and simulation.
+
+#### Before Execution
+
+![Web Interface](simulation-web/sim2/sim2-interface.png)
+
+#### After Execution
+
+![Web Results](simulation-web/sim2/sim2-results.png)
+
+<br>
 <br>
 
 ## Timeline
 
-| Year | Event                               |
-| ---- | ----------------------------------- |
-| 2022 | Original notebook notes created     |
-| 2022 | TI-92 Plus simulation developed     |
-| 2022 | JavaScript adaptation created       |
-| 2026 | Historical reconstruction completed |
-| 2026 | Repository documentation completed  |
+| Year | Event                                            |
+| ---- | -------------------------------------------------|
+| 2021 | Early automation experiments                     |
+| 2022 | Original notebook notes created                  |
+| 2022 | TI-92 Plus simulation developed                  |
+| 2022 | JavaScript adaptation created                    |
+| 2022 | Expanded evolution simulation (Sim2) developed   |
+| 2026 | Historical reconstruction completed              |
+| 2026 | Repository documentation completed               |
 
 <br>
 <br>
@@ -134,7 +150,7 @@ A demonstration of the original simulation running on TI-92 Plus hardware.
 
 ## Significance
 
-Although technically simple, this project introduced several concepts that would continue to appear throughout later projects:
+Although technically simple, this project introduced me to several concepts that would continue to appear throughout later projects:
 
 * Probability
 * Simulation
@@ -142,7 +158,7 @@ Although technically simple, this project introduced several concepts that would
 * Systems thinking
 * Engineering iteration
 
-The progression from notebook notes, to calculator implementation, to JavaScript adaptation reflects the beginning of a longer interest in mathematics, programming, engineering, and computational modeling.
+This progression from notebook notes, to calculator implementation, to JavaScript adaptation, and finally to an expanded second-generation simulation reflects my innate interest in mathematics, programming, engineering, and computational modeling, all of which only serve to enlighten me with joy.
 
 <br>
 
